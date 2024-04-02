@@ -37,6 +37,7 @@ const Game = () => {
 
   // Check for the winner
   const calculateWinner = (squares) => {
+    // Build index of lines to check for the winner indexes
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -70,20 +71,20 @@ const Game = () => {
     <div className="main-container">
       <div className="container">
         <header className="App-header">
-          <h1>Game</h1>
+          <h1>Tic Tac Game</h1>
         </header>
         <div className="status">{status}</div>
-        <div className="board-row">
+        <div className="square-row">
           {createSquare(0)}
           {createSquare(1)}
           {createSquare(2)}
         </div>
-        <div className="board-row">
+        <div className="square-row">
           {createSquare(3)}
           {createSquare(4)}
           {createSquare(5)}
         </div>
-        <div className="board-row">
+        <div className="square-row">
           {createSquare(6)}
           {createSquare(7)}
           {createSquare(8)}
